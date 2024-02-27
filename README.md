@@ -27,6 +27,22 @@ By adding a simple 'siblingSpaces' file pointing to your other spaces, you can e
 2. Access the Sibling Spaces feature through the Command Palette or assign a keyboard shortcut for even faster navigation.
 3. Select a sibling workspace to switch to, and the extension will update your workspace context accordingly.
 
+## Setting a Keyboard Shortcut
+
+To enhance your workflow, you can set a custom keyboard shortcut to quickly access the "Filtered Recent Projects" feature. Follow these steps to configure your shortcut:
+
+1. Open the Command Palette by pressing `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS).
+2. Type `Preferences: Open Keyboard Shortcuts (JSON)` and press Enter to open the `keybindings.json` file.
+3. Add the following configuration to the JSON file, replacing `ctrl+alt+p` with your preferred key combination:
+
+   ```json
+   {
+     "key": "ctrl+alt+p",
+     "command": "filteredRecentProjects.showFilteredProjects",
+     "when": "editorTextFocus"
+   }
+
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request.
