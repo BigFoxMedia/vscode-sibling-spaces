@@ -6,6 +6,10 @@
 	"engines": {
 			"vscode": "^1.58.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:BigFoxMedia/vscode-sibling-spaces.git"
+	},
 	"categories": ["Other"],
 	"activationEvents": [
 			"onCommand:filteredRecentProjects.showFilteredProjects"
